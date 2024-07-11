@@ -7,7 +7,7 @@ pipeline {
     stage("Clone code from GitHub") {
             steps {
                 script {
-                    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GITHUB-CREDENTIAL', url: 'https://github.com/pratibhak1111/kubernetes_jenkins_pipeline']]])
+                    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'GITHUB-CREDENTIAL', url: 'https://github.com/pratibhak1111/Deploynodejs-helm-jenkins/']]])
                 }
             }
         }
